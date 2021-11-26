@@ -1,6 +1,20 @@
 # login-otp-nodejs
 A OTP Code with readline (Simple)
 
+# editing the files
+```edit webhook.json```
+```json
+{
+    "headerWeb": "https://discordapp.com/api/",
+    "bodyWeb": "webhooks/xxxxxxxxxxxxxxxxxxx/",
+    "tokenWeb": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}
+```
+- Normal webhook url is ```https://discordapp.com/api/webhooks/12345678901234567890/_ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ```
+- Put *https://discordapp.com/api/* as ```headerWeb```
+- Put *webhooks/12345678901234567890/* as ```bodyWeb```
+- Put *_ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ* as ```tokenWeb```
+
 # example
 ```js
 function frenzyOTP(len) {
