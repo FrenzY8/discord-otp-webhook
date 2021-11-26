@@ -1,6 +1,10 @@
 const readline = require('readline');
 var rl = readline.createInterface({ input: process.stdin, output: process.stdout })
-
+const {
+    Webhook
+} = require('discord-webhook-node')
+const { headerWeb, bodyWeb, tokenWeb } = require('./webhook.json');
+const Pesan = new Webhook("" + headerWeb + bodyWeb + tokenWeb + "")
 // function for OTP
 function frenzyOTP(len) {
   var str = "";                          
@@ -18,7 +22,8 @@ function frenzyOTP(len) {
 
 // make let for Readline function
 let otpFunction = frenzyOTP(6); // You can set the number/words as you like
-console.log(`before you go, please write ${otpFunction}`)
+Pesan.send(otpFunction)
+console.log("Go to your channel webhook to see OTP")
 rl.question("Enter the OTP : ", rlOtp => {
   // Anti-Cheat
   if(rlOtp == "") {
