@@ -22,7 +22,11 @@ function frenzyOTP(len) {
 
 // make let for Readline function
 let otpFunction = frenzyOTP(6); // You can set the number/words as you like
+
+// Sending the OTP to webhook (pesan = my const)
 Pesan.send(otpFunction)
+
+// then give they notification
 console.log("Go to your channel webhook to see OTP")
 rl.question("Enter the OTP : ", rlOtp => {
   // Anti-Cheat
