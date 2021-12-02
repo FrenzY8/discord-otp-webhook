@@ -15,6 +15,9 @@ A OTP Code with readline (Simple)
 - Put *webhooks/12345678901234567890/* as ```bodyWeb```
 - Put *_ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ* as ```tokenWeb```
 
+# information
+This otp is Strong, your webhook never leaked/showed/decrypted, so ya use the webhook.json
+
 # example
 ```js
 function frenzyOTP(len) {
