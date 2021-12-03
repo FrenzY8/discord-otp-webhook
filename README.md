@@ -51,15 +51,7 @@ function frenzyOTP(len) {
 
 # component thats you need
 - Nodejs
-
-# running
-- node (mainfile).js
-
-# to do list
-- nothing
-
-# main file
-your_otp.js
+- Cryptr
 
 # Support
 [Saweria](https://saweria.co/FrenzyS6)
