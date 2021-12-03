@@ -1,6 +1,12 @@
 # login-otp-nodejs
 A OTP Code with readline (Simple)
 
+# what is the use of an encrypted webhook
+- If you are a tool maker in NodeJs or Anti-DDOS in Nodejs, you can use this if you want your tools to be ```safe from thieves```.
+- However, if you use a webhook, your webhook ```can be stolen``` if you use the ```manual``` method,
+- We made this so that your webhook is safe from hackers who try to find your ```webhook/leaks```
+- If your webhook is successfully obtained by the Hackers, usually they will perform ```Spam Tag actions```, which are very annoying and can ```destroy``` servers (Discord)
+- Your webhook will be safe if you use this method (this code) because we store it in a different file ```(webhook.json)``` and it has been encrypted by ```Cryptr```
 # editing the files
 ```edit webhook.json```
 ```json
