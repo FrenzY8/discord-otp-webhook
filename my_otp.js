@@ -1,4 +1,4 @@
-/*** LOGIN SIGNUP WITH OTP DISCORD WEBHOOK ***/
+/*** YOUR TOOLS WITH OTP DISCORD WEBHOOK ***/
 
 // Thanks for use this script but if you wanted to recode/something re-publish
 // please mention the creator, you can read License Permission for more info
