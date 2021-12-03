@@ -24,7 +24,8 @@ A OTP Code with readline (Simple)
 # installation and run
 - Install
 - npm install cryptr
-
+-
+-
 - running
 - node my_otp.js
 
