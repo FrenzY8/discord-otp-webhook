@@ -9,6 +9,7 @@
 
 /*** Thank You For Use This ***/
 
+/*** Load Files ***/
 const readline = require('readline');
 const Cryptr = require('cryptr')
 const cryptr = new Cryptr('myTotalySecretKey')
@@ -17,7 +18,7 @@ const {
     Webhook
 } = require('discord-webhook-node')
 
-// load your webhook
+/*** load your webhook ***/
 const { headerWeb, bodyWeb, tokenWeb } = require('./webhook.json');
 
 /*** ENCRYPT DECRYPT ***/ 
@@ -31,7 +32,7 @@ let headerDec = cryptr.decrypt(headerEnc);
 let bodyDec = cryptr.decrypt(bodyEnc);
 let tokenDec = cryptr.decrypt(tokenEnc);
 
-// create the webhook one
+/*** create the webhook one ***/
 const webhookMsg = new Webhook("" + headerDec + bodyDec + tokenDec + "")
 let saveall = "Done.";
 
@@ -47,23 +48,19 @@ function frenzyOTP(len) {
 // then => returned
   return str; // (str) the function
 }
-// Example : frenzyOTP( NUMBER ))
+
+/*** Example : frenzyOTP( NUMBER )) ***/
 // Use : frenzyOTP(6) Normal OTP is 6 Words
 
-// make let for Readline function
+/*** make let for Readline function ***/
 let otpFunction = frenzyOTP(6); // You can set the number/words as you like
-
-// Sending the OTP to webhook (pesan = my const)
-// Pesan.send(otpFunction)
-
-// Webhook Tester 
-// console.log("" + headerDec + bodyDec + tokenDec + "")
 
 /*** Send the OTP Code ***/
 webhookMsg.send(`Eyo new OTP code has generated.\n> ${otpFunction}`);
 
 /*** GAVE THEY NOTIFICATIONS ***/
 console.log("[+] Go to your channel webhook to see OTP")
+
 rl.question("Enter the OTP : ", rlOtp => {
   // Anti-Cheat
   if(rlOtp == "") {
