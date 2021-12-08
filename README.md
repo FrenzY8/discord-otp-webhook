@@ -1,6 +1,9 @@
 # login-otp-nodejs
 A OTP Code with readline (Simple)
 
+# setup
+- npm install cryptr
+
 # what is the use of an encrypted webhook
 - If you are a tool maker in NodeJs or Anti-DDOS in Nodejs, you can use this if you want your tools to be ```safe from thieves```.
 - However, if you use a webhook, your webhook ```can be stolen``` if you use the ```manual``` method,
